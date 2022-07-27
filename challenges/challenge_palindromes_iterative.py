@@ -1,2 +1,7 @@
 def is_palindrome_iterative(word):
-    """ Faça o código aqui. """
+    if not word:
+        return False
+    lista = list(word)
+    invertida = lista.copy()
+    invertida.reverse()
+    return lista == invertida
