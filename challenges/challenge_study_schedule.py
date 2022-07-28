@@ -5,6 +5,5 @@ def study_schedule(permanence_period, target_time):
             if schedule[0] <= target_time <= schedule[1]:
                 quantity += 1
         return quantity
-
     except TypeError:
         return None
